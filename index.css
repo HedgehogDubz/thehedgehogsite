@@ -100,7 +100,7 @@ html{
 .section2-image-main {
     display: block;
     left: 50%; /* position the left edge of the element at the middle of the parent */
-    transform: translate(-50%, 0px);
+    transform: translate(-55%, 0px);
     height: calc(70%);
     width:auto;
 
@@ -140,7 +140,7 @@ html{
 .section2-text-main{
     display: block;
     left: 50%; /* position the left edge of the element at the middle of the parent */
-    transform: translate(-50%, 100px);
+    transform: translate(-45%, 100px);
     height: calc(80%);
     width:auto;
 
@@ -153,8 +153,6 @@ html{
 
     color:white;
     font-size: 30px;
-
-    
     
 
 }
