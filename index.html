@@ -12,18 +12,24 @@
   <!-- Fonts Links (Roboto 400, 500 and 700 included) -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
 
+  <!---->
+
   <!-- CSS Files Links -->
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="header.css">
 
+  <!--JS Library Links-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
   <!-- Title -->
-  <title>Hedgehog Site</title>
+  <title>Hedgehog Studios</title>
 </head>
 <body>
   
   <main>
     <image class="bg-image1"src ="images/HedgehogInGrass.png"></image>
     <div class="bg-image1-cover"></div>
+    <div class="bg-image1-cover2"></div>
     <div class="taskbar">
       <div class="taskbar-grid">
         <div class="logo">
@@ -56,16 +62,48 @@
   <div class="section2">
     <div class="section2-headers">
       <span></span>
-      <span class="section2-headers-words"><span class="section2-headers-characters">T</span>echnology</span>
-      <span class="section2-headers-words"><span class="section2-headers-characters">I</span>magination</span>
-      <span class="section2-headers-words"><span class="section2-headers-characters">M</span>onetary</span>
-      <span class="section2-headers-words"><span class="section2-headers-characters">E</span>ducation</span>
+      <span class="section2-headers-selected section2-headers-words" id="section2-headers-technology"><span class="section2-headers-characters">T</span>echnology</span>
+      <span class="section2-headers-words section2-headers-center" id="section2-headers-imagination"><span class="section2-headers-characters">I</span>magination</span>
+      <span class="section2-headers-words section2-headers-center" id="section2-headers-monetary"><span class="section2-headers-characters">M</span>onetary</span>
+      <span class="section2-headers-words" id="section2-headers-education"><span class="section2-headers-characters">E</span>ducation</span>
       <span></span>
       
     </div>
-    <br>
-    <div class="section2-content-container">
-      <image class="section2-image1" src="images/HedgehogInLeaves.png"></image>
+
+    <div class="section2-superContent-grid">
+      <div class="section2-text-container">
+        <div id = "section2-mainText-technology"class="section2-text-main">
+          <h1><b>Technology</b></h1>
+          <p class="section2-bodyText">
+            Technology is the face of the new world. And we at Hedgehog Studios embrace this fact. Here, at Hedgehog Studios, we study <b>AI</b>, create original <b>software</b>, and have lots of fun doing so! We love to dive into new <b>innovative topics</b>, 
+            exploring the frontiers in this new generation of knowledge.
+          </p>
+        </div>
+        <div id = "section2-mainText-imagination"class="section2-text-main">
+          <h1><b>Imagination</b></h1>
+          <p class="section2-bodyText">
+            At Hedgehog Studios, we believe that the limits of what we can accomplish with technology are only limited by our own imagination. That's why we encourage our team to let their creativity run wild and come up with innovative ideas that push the boundaries of what's possible. We have specialty in <b>3D printing</b>, <b>3D modeling</b>, and <b>game design</b>.
+          </p>    
+        </div>
+        <div id = "section2-mainText-monetary"class="section2-text-main">
+          <h1><b>Monetary</b></h1>
+          <p class="section2-bodyText">
+            As of current, Hedgehog Studios is a <b>non-profit organization</b>, as in we make no profit :D. However, over time, we will start to create <b>business adventures</b> using our knowledge of technology to become financially stable, hopefully furthering improvements in our creations.
+          </p>
+        </div>
+        <div id = "section2-mainText-education"class="section2-text-main">
+          <h1><b>Education</b></h1>
+          <p class="section2-bodyText">
+            N/A dont feel like writin right now
+          </p>  
+        </div>
+      </div>
+      <div class="section2-content-container">
+        <image id = "section2-mainImage-technology"class="section2-image-main" src="images/HedgehogCyborg.png"></image>
+        <image id = "section2-mainImage-imagination"class="section2-image-main" src="images/HedgehogInLeaves.png"></image>
+        <image id = "section2-mainImage-monetary"class="section2-image-main" src="images/HedgehogBusinessman.png"></image>
+        <image id = "section2-mainImage-education"class="section2-image-main" src="images/HedgehogLibrary.png"></image>
+      </div>
     </div>
 
   </div>
@@ -75,5 +113,6 @@
 
   <noscript>Your browser don't support JavaScript!</noscript>
   <script src="index.js"></script>
+  <script src="section2.js"></script>
 </body>
 </html>
